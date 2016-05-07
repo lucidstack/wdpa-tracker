@@ -1,0 +1,33 @@
+<h2>Show protected area</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @protected_area.name %>
+  </li>
+
+  <li>
+    <strong>Wdpa:</strong>
+    <%= @protected_area.wdpa_id %>
+  </li>
+
+  <li>
+    <strong>Status:</strong>
+    <%= @protected_area.status %>
+  </li>
+
+  <li>
+    <strong>Country:</strong>
+    <%= @protected_area.country_id %>
+  </li>
+
+  <li>
+    <strong>Designation:</strong>
+    <%= @protected_area.designation_id %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: protected_area_path(@conn, :edit, @protected_area) %>
+<%= link "Back", to: protected_area_path(@conn, :index) %>

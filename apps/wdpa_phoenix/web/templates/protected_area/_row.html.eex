@@ -1,0 +1,14 @@
+<tr>
+  <td><%= @protected_area.name %></td>
+  <td><%= @protected_area.wdpa_id %></td>
+  <td><%= @protected_area.status %></td>
+  <td><%= @protected_area.country.name %></td>
+  <td><%= @protected_area.designation_id %></td>
+  <td><%= @protected_area.updated_at %></td>
+
+  <td class="text-right">
+    <%= link "Show", to: protected_area_path(@conn, :show, @protected_area), class: "btn btn-default btn-xs" %>
+    <%= link "Edit", to: protected_area_path(@conn, :edit, @protected_area), class: "btn btn-default btn-xs" %>
+    <%= link "Delete", to: protected_area_path(@conn, :delete, @protected_area), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+  </td>
+</tr>

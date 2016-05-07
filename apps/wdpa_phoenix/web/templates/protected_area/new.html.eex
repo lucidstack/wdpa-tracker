@@ -1,0 +1,6 @@
+<h2>New protected area</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: protected_area_path(@conn, :create) %>
+
+<%= link "Back", to: protected_area_path(@conn, :index) %>

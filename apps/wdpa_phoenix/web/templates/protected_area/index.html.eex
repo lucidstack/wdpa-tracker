@@ -1,0 +1,22 @@
+<h2>Listing protected areas</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Wdpa</th>
+      <th>Status</th>
+      <th>Country</th>
+      <th>Designation</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for protected_area <- @protected_areas do %>
+      <%= render "_row.html", protected_area: protected_area, conn: @conn %>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link "New protected area", to: protected_area_path(@conn, :new) %>
