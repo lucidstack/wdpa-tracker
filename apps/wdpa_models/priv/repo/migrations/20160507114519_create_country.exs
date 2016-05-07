@@ -1,4 +1,4 @@
-defmodule WdpaPhoenix.Repo.Migrations.CreateCountry do
+defmodule WdpaModels.Repo.Migrations.CreateCountry do
   use Ecto.Migration
 
   def change do

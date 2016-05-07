@@ -1,4 +1,4 @@
-defmodule WdpaPhoenix.Repo.Migrations.AddSysPeriodToProtectedAreasTable do
+defmodule WdpaModels.Repo.Migrations.AddSysPeriodToProtectedAreasTable do
   use Ecto.Migration
 
   def change do

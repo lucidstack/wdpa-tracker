@@ -1,4 +1,4 @@
-defmodule WdpaPhoenix.Repo.Migrations.CreateProtectedArea do
+defmodule WdpaModels.Repo.Migrations.CreateProtectedArea do
   use Ecto.Migration
 
   def change do

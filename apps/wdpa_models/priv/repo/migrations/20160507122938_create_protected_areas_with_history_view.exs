@@ -1,4 +1,4 @@
-defmodule WdpaPhoenix.Repo.Migrations.CreateProtectedAreasWithHistoryView do
+defmodule WdpaModels.Repo.Migrations.CreateProtectedAreasWithHistoryView do
   use Ecto.Migration
 
   def change do

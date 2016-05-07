@@ -1,4 +1,4 @@
-defmodule WdpaPhoenix.Repo.Migrations.CreateExtensionTemporalTables do
+defmodule WdpaModels.Repo.Migrations.CreateExtensionTemporalTables do
   use Ecto.Migration
 
   def change do

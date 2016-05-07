@@ -1,4 +1,4 @@
-defmodule WdpaPhoenix.Repo.Migrations.CreateDesignationType do
+defmodule WdpaModels.Repo.Migrations.CreateDesignationType do
   use Ecto.Migration
 
   def change do

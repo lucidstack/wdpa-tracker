@@ -1,4 +1,4 @@
-defmodule WdpaPhoenix.Repo.Migrations.CreateProtectedAreasHistoryTable do
+defmodule WdpaModels.Repo.Migrations.CreateProtectedAreasHistoryTable do
   use Ecto.Migration
 
   def change do

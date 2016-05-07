@@ -1,4 +1,4 @@
-defmodule WdpaPhoenix.Repo.Migrations.CreateTriggerForProtectedAreasVersioning do
+defmodule WdpaModels.Repo.Migrations.CreateTriggerForProtectedAreasVersioning do
   use Ecto.Migration
 
   def change do
