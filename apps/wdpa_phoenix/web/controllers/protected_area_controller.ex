@@ -2,8 +2,6 @@ defmodule WdpaPhoenix.ProtectedAreaController do
   use WdpaPhoenix.Web, :controller
 
   alias WdpaModels.ProtectedArea
-  alias WdpaModels.ProtectedAreaWithHistory
-  import WdpaModels.ProtectedAreaWithHistory
 
   def index(conn, _params) do
     protected_areas = ProtectedArea

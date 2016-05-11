@@ -6,10 +6,9 @@
 use Mix.Config
 
 # General application configuration
-config :wdpa_models,
-  ecto_repos: [WdpaModels.Repo]
-
-config :wdpa_phoenix, ecto_repos: []
+config :wdpa_models,   ecto_repos: [WdpaModels.Repo]
+config :wdpa_phoenix,  ecto_repos: []
+config :wdpa_importer, ecto_repos: []
 
 # Configures the endpoint
 config :wdpa_phoenix, WdpaPhoenix.Endpoint,

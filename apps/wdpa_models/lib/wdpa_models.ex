@@ -1,7 +1,6 @@
 defmodule WdpaModels do
   use Application
 
-
   defmacro __using__(_opts) do
     quote do
       alias WdpaModels.Repo
