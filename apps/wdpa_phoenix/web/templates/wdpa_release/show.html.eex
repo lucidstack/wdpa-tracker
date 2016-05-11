@@ -1,0 +1,18 @@
+<h2>Show wdpa release</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @wdpa_release.name %>
+  </li>
+
+  <li>
+    <strong>Valid:</strong>
+    <%= @wdpa_release.valid %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: wdpa_release_path(@conn, :edit, @wdpa_release) %>
+<%= link "Back", to: wdpa_release_path(@conn, :index) %>

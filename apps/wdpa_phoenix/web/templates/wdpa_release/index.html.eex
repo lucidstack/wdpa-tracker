@@ -1,0 +1,28 @@
+<h2>Listing wdpa releases</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Valid</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for wdpa_release <- @wdpa_releases do %>
+    <tr>
+      <td><%= wdpa_release.name %></td>
+      <td><%= wdpa_release.valid %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: wdpa_release_path(@conn, :show, wdpa_release), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: wdpa_release_path(@conn, :edit, wdpa_release), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: wdpa_release_path(@conn, :delete, wdpa_release), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New wdpa release", to: wdpa_release_path(@conn, :new) %>

@@ -19,6 +19,7 @@ defmodule WdpaPhoenix.Router do
     get "/", PageController, :index
     resources "/countries", CountryController
     resources "/protected_areas", ProtectedAreaController
+    resources "/wdpa_releases", WdpaReleaseController
   end
 
 

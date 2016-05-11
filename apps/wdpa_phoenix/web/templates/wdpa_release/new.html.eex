@@ -1,0 +1,6 @@
+<h2>New wdpa release</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: wdpa_release_path(@conn, :create) %>
+
+<%= link "Back", to: wdpa_release_path(@conn, :index) %>
