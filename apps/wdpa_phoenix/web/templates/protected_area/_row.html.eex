@@ -1,8 +1,8 @@
 <tr>
   <td><%= @protected_area.name %></td>
   <td><%= @protected_area.wdpa_id %></td>
+  <td><%= country_name(@protected_area) %></td>
   <td><%= @protected_area.status %></td>
-  <td><%= @protected_area.country.name %></td>
   <td><%= @protected_area.designation_id %></td>
   <td><%= @protected_area.updated_at %></td>
 
