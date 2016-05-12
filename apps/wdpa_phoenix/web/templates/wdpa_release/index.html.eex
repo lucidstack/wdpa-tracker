@@ -4,7 +4,8 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Valid</th>
+      <th>Valid from</th>
+      <th>Valid to</th>
 
       <th></th>
     </tr>
@@ -13,7 +14,8 @@
 <%= for wdpa_release <- @wdpa_releases do %>
     <tr>
       <td><%= wdpa_release.name %></td>
-      <td><%= wdpa_release.valid %></td>
+      <td><%= wdpa_release.valid_from %></td>
+      <td><%= wdpa_release.valid_to %></td>
 
       <td class="text-right">
         <%= link "Show", to: wdpa_release_path(@conn, :show, wdpa_release), class: "btn btn-default btn-xs" %>

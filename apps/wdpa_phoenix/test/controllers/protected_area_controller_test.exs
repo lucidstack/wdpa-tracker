@@ -2,7 +2,7 @@ defmodule WdpaPhoenix.ProtectedAreaControllerTest do
   use WdpaPhoenix.ConnCase
 
   alias WdpaModels.ProtectedArea
-  @valid_attrs %{name: "some content", status: "some content", wdpa_id: 42}
+  @valid_attrs %{name: "some content", wdpa_id: 42}
   @invalid_attrs %{}
 
   test "lists all entries on index", %{conn: conn} do

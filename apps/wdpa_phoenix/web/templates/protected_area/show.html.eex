@@ -13,11 +13,6 @@
   </li>
 
   <li>
-    <strong>Status:</strong>
-    <%= @protected_area.status %>
-  </li>
-
-  <li>
     <strong>Country:</strong>
     <%= @protected_area.country_id %>
   </li>

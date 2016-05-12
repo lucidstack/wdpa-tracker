@@ -4,6 +4,7 @@ defmodule WdpaModels do
   defmacro __using__(_opts) do
     quote do
       alias WdpaModels.Repo
+      alias Ecto.Changeset
 
       import Ecto
       import Ecto.Query

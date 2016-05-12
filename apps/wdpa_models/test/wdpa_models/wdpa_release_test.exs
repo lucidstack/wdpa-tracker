@@ -3,7 +3,8 @@ defmodule WdpaPhoenix.WdpaReleaseTest do
 
   alias WdpaModels.WdpaRelease
 
-  @valid_attrs %{name: "some content", valid: true}
+  @valid_attrs %{name: "some content",
+                 valid_from: Ecto.DateTime.cast!({{2016, 1, 1}, {0, 0, 0}})}
   @invalid_attrs %{}
 
   test "changeset with valid attributes" do

@@ -18,7 +18,7 @@ defmodule WdpaModels.Country do
   def changeset(struct, params \\ %{}) do
     struct
     |> cast(params, [:name, :iso3])
-    |> validate_required([:name, :iso3])
+    |> validate_required([:iso3])
     |> validate_length(:iso3, is: 3)
   end
 end

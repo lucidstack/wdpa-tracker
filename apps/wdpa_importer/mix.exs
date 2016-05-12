@@ -35,6 +35,7 @@ defmodule WdpaImporter.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:wdpa_models, in_umbrella: true}]
+    [{:wdpa_models, in_umbrella: true},
+     {:csv, "~> 1.4.0"}]
   end
 end

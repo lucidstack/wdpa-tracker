@@ -6,7 +6,7 @@ defmodule WdpaPhoenix.ProtectedAreaController do
   def index(conn, _params) do
     protected_areas = ProtectedArea
     |> limit(10)
-    |> preload(:country)
+    |> preload([:country, :wdpa_releases])
     |> Repo.all
 
     render(conn, "index.html", protected_areas: protected_areas)

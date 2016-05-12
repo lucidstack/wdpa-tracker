@@ -8,8 +8,13 @@
   </li>
 
   <li>
-    <strong>Valid:</strong>
-    <%= @wdpa_release.valid %>
+    <strong>Valid from:</strong>
+    <%= @wdpa_release.valid_from %>
+  </li>
+
+  <li>
+    <strong>Valid to:</strong>
+    <%= @wdpa_release.valid_to %>
   </li>
 
 </ul>
