@@ -24,6 +24,7 @@ defmodule WdpaModels.ProtectedArea do
   def changeset(struct, params \\ %{}) do
     struct
     |> cast(params, [:name, :wdpa_id])
+    |> unique_constraint(:wdpa_id, name: :protected_areas_pkey)
     |> validate_required([:wdpa_id])
   end
 end
