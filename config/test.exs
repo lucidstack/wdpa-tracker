@@ -9,6 +9,9 @@ config :wdpa_phoenix, WdpaPhoenix.Endpoint,
 # Print only warnings and errors during test
 config :logger, level: :warn
 
+# Configure wdpa_importer
+config :wdpa_importer, file_reader: WdpaImporter.Test.FileMock
+
 # Configure your database
 config :wdpa_models, WdpaModels.Repo,
   adapter: Ecto.Adapters.Postgres,
